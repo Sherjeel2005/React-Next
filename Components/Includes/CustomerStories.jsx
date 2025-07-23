@@ -30,8 +30,8 @@ const CustomerStories = () => {
       {/*Section 2*/}
 
       <div className="py-16 px-3 bg-black w-full z-0">
-        <div className="max-w-7xl w-full mx-auto  justify-center">
-          <div className="flex text-white flex-col">
+        <div className="max-w-7xl w-full mx-auto flex flex-col gap-5  justify-center">
+          <div className="flex text-white  flex-col">
             <h2 className="font-semibold text-[44px] leading-none">
               Powered by
             </h2>

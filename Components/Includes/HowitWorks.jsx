@@ -67,7 +67,7 @@ const HowitWorks = () => {
                 </div>
                </div>
 
-         <div className=' px-3 bg-[#F5F5F5]'>
+         <div className=' px-3 py-4 bg-[#F5F5F5]'>
             
             <div  className='max-w-7xl mx-auto justify-center items-center '>
 
