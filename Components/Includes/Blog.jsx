@@ -9,14 +9,16 @@ const Blog = () => {
 
 ]
   return (
-    <div className="py-20  bg-white px-3">
-        <div className="max-w-7xl w-full mx-auto">
+  
 
-            <div className="flex flex-col gap-10">
+    <section className='bg-white px-5 md:px-10 lg:px-20 py-[72px] md:py-[144px] w-full  '>
+        <div className="max-w-7xl mx-auto">
+                 <div className="flex flex-col gap-12">
                     <div className="flex justify-center">
                         <span className='text-black text-[45px]'>Recent articles</span>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-0 space-x-4">
+                <div className="flex flex-col gap-16">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
 
                         {blogs.map((item , index)=>(
 
@@ -44,9 +46,10 @@ const Blog = () => {
            Read the blog
           </a>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

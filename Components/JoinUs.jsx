@@ -2,10 +2,11 @@ import React from 'react'
 
 const JoinUs = () => {
   return (
-    <div className="py-20 bg-black px-3">
-        <div className="max-w-7xl w-full mx-auto">
+   
 
-            <div className="flex text-white gap-5  flex-col">
+    <section className='px-5 md:px-10 lg:px-20  py-[72px] md:py-[144px] w-full bg-black'>
+      <div className="max-w-7xl mx-auto">
+            <div className="flex text-white gap-24  flex-col">
                 <div className="flex items-center justify-between">
                     <span className=' text-[50px] sm:text-[114px] leading-none '>Join us</span>
                     <div className=''>
@@ -18,7 +19,7 @@ const JoinUs = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-wrap md:flex-nowrap rounded-tr-4xl border-t-2 pt-7 pr-4 border-r-2 border-white justify-between">
+                <div className="flex flex-wrap md:flex-nowrap rounded-tr-4xl border-t-2 pt-8 pr-8 border-r-2 border-white justify-between">
                     <div className="flex flex-col gap-4">
                           <div className=''>
                         <a
@@ -28,7 +29,7 @@ const JoinUs = () => {
               December 21, 2022
             </a>
                           </div>
-                          <span className='text-[30px]  md:text-[45px] text-white'>Attention-Grabbing Marketing in a Noisy Market</span>
+                          <span className='text-[30px]   md:text-[45px] text-white'>Attention-Grabbing Marketing in a Noisy Market</span>
                             <div className='flex '>
                                <a
             href="#"
@@ -40,13 +41,14 @@ const JoinUs = () => {
                     </div>
 
                    <div className='pr-5 flex justify-end w-full'>
-                     <img src="/JoinUs.jpg" className='object-cover' alt="" />
+                     <img src="/JoinUs.jpg" className='object-cover w-[402px] h-[402px]' alt="" />
                    </div>
                 </div>
             </div>
+      </div>
+    </section>
 
-        </div>
-    </div>
+
   )
 }
 

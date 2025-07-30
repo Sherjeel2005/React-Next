@@ -1,21 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
+
 // import { Menu } from 'lucide-react';
 import { slide as Menu } from 'react-burger-menu'
 import { Sling as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 import { SquareX } from 'lucide-react';
 
-const inter = Inter({ subsets: ['latin'] });
 
 const Header = () => {
 
     const [isOpen , setIsOpen] = useState(false)
   return (
-    <header className="w-full px-6 py-4 border-b  border-gray-400">
+    <header className="w-full px-3 md:px-8 xl:px-20 py-4 border-b  border-[#FFFFFF1A]">
       <div
-        className={`${inter.className} flex items-center justify-between md:justify-between`}
+        className={` flex items-center justify-between md:justify-between`}
       >
         {/* Left: Hamburger (mobile only) */}
          <div className="md:hidden">
@@ -24,7 +23,7 @@ const Header = () => {
 
           {/* Slide-in Mobile Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-[lab(21%_0.05_-2.26_/_0.61)] shadow-lg transform transition-transform duration-300 ease-in-out z-40 ${
+        className={`fixed top-0 left-0 h-full w-64 bg-[lab(21%_0.05_-2.26_/_0.61)] shadow-lg transform transition-transform duration-300 ease-in-out z-200 ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >

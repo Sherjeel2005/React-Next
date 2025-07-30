@@ -11,30 +11,49 @@ import JoinUs from '@/Components/JoinUs'
 import SignUp from '@/Components/SignUp'
 import RequestDemo from '@/Components/RequestDemo'
 import Footer from '@/Components/Includes/Footer'
-import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+import { motion, useScroll } from "framer-motion"
+
+
 const Home = () => {
+   const { scrollYProgress } = useScroll()
+
   return (
     <>
 
-        <div className={`w-full ${inter.className} bg-black min-w-[300px] min-h-screen`}>
+        <>
+      {/* Scroll Indicator */}
+      <motion.div
+        id="scroll-indicator"
+        style={{
+          scaleX: scrollYProgress,
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: 5,
+          originX: 0,
+          backgroundColor: "rgb(0 140 255)",
+          zIndex: 9999,
+        }}
+      />
 
-            <Header/>
-            <Hero/>
-            <Features/>
-            <CustomerStories/>
-            <DriveRevenue/>
-            <HowitWorks/>
-            <Loved/>
-            <Blog/>
-            <JoinUs/>
-            <SignUp/>
-            <RequestDemo/>
-            <Footer/>
-
-        </div>
-      
+      {/* Entire Page */}
+      <div className="w-full font-[Inter] bg-black min-w-[300px] min-h-screen">
+        <Header />
+        <Hero />
+        <Features />
+        <CustomerStories />
+        <DriveRevenue />
+        <HowitWorks />
+        <Loved />
+        <Blog />
+        <JoinUs />
+        <SignUp />
+        <RequestDemo />
+        <Footer />
+      </div>
+    </>
 
     </>
  
